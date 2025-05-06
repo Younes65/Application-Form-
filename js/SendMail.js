@@ -19,7 +19,7 @@ async function SumbitEnglishForm(e) {
 
     console.log(formData.get("fileToUpload"));
     const result = await fetch(
-      "https://form-backend-red.vercel.app/submit",
+      "https://form-backend-kohl.vercel.app/submit",
 
       {
         method: "POST",
@@ -39,7 +39,7 @@ async function SumbitArabicForm(e) {
 
     console.log(formData.get("fileToUpload"));
     const result = await fetch(
-      "https://form-backend-red.vercel.app/submit",
+      "https://form-backend-kohl.vercel.app/submit",
 
       {
         method: "POST",
