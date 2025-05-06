@@ -1,0 +1,238 @@
+@font-face {
+  font-family: Arbfonts Ge Ss Tv;
+  src: url("../fonts/ArbFONTS-ge-ss-tv-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arbfonts Ge Ss Two 28";
+  src: url("../fonts/ArbFONTS-GE-SS-Two-Light_28.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.body {
+  background-color: #f3ece3;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.form_container {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.show {
+  display: block !important;
+}
+
+.image-wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.image {
+  width: 400px;
+}
+
+.text-wrapper {
+  text-align: center;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.welcome {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.welcome.ar {
+  font-family: "Arbfonts Ge Ss Two 28", Arial, sans-serif;
+}
+
+.field-label {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.field-label.ar {
+  text-align: right;
+  font-family: "Arbfonts Ge Ss Two 28", Arial, sans-serif;
+}
+
+.text-field {
+  border-radius: 8px;
+  height: 50px;
+}
+
+.text-field.ar {
+  text-align: right;
+  font-family: "Arbfonts Ge Ss Two 28", Arial, sans-serif;
+}
+
+.field_wrapper.row {
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  justify-content: space-between;
+  align-items: stretch;
+  display: flex;
+}
+
+.field_wrapper.ar {
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+}
+
+.submit-button {
+  background-color: #b18341;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px 34px;
+  font-size: 17px;
+}
+
+.submit-button-2 {
+  background-color: #8f7751;
+  margin-top: 0;
+}
+
+.half {
+  width: 50%;
+}
+
+.text_area {
+  border-radius: 8px;
+  height: 100px;
+  min-height: 150px;
+}
+
+.text_area.ar {
+  text-align: right;
+  font-family: "Arbfonts Ge Ss Two 28", Arial, sans-serif;
+}
+
+.message {
+  display: none;
+}
+
+.button-wrapper {
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 40px;
+  display: flex;
+}
+
+.button-wrapper.text-wrapper {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.text-block {
+  max-width: 550px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.text-block.ar {
+  font-family: "Arbfonts Ge Ss Two 28", Arial, sans-serif;
+}
+
+.text-span {
+  color: #8f7751;
+}
+
+.left {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 40px;
+  display: flex;
+}
+
+.left.ar {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.link {
+  color: #030303;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.link:hover {
+  color: #8f7751;
+}
+
+.copyri {
+  color: #000;
+}
+
+.tabs-menu {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.tab-link {
+  background-color: #fffdfd;
+  border-radius: 8px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 17px;
+}
+
+.tab-link.w--current {
+  color: #fff;
+  background-color: #8b734b;
+}
+
+.pattern {
+  opacity: 0.1;
+  height: 300px;
+  position: absolute;
+  top: -129px;
+  left: -58px;
+}
+
+@media screen and (max-width: 479px) {
+  .form_container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@font-face {
+  font-family: "Arbfonts Ge Ss Tv";
+  src: url("../fonts/ArbFONTS-ge-ss-tv-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arbfonts Ge Ss Two 28";
+  src: url("../fonts/ArbFONTS-GE-SS-Two-Light_28.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
