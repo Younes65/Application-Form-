@@ -39,7 +39,7 @@ async function SumbitArabicForm(e) {
 
     console.log(formData.get("fileToUpload"));
     const result = await fetch(
-      "hhttps://form-backend-red.vercel.app/submit",
+      "https://form-backend-red.vercel.app/submit",
 
       {
         method: "POST",
