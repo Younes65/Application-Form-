@@ -1,51 +1,54 @@
+const ArabForm = document.getElementById("Ar-form");
+const EnglishForm = document.getElementById("En-form");
+
 document.getElementById("En-btn").addEventListener("click", (e) => {
   e.preventDefault();
   e.stopPropagation();
-  return SubmitEnglishForm();
+  return SumbitEnglishForm(e);
 });
 
 document.getElementById("Arab-btn").addEventListener("click", (e) => {
   e.preventDefault();
   e.stopPropagation();
-  return SubmitArabicForm();
+  return SumbitArabicForm(e);
 });
 
-async function SubmitEnglishForm() {
+async function SumbitEnglishForm(e) {
   try {
     const formData = new FormData(EnglishForm);
-    const result = await fetch("https://form-backend-kohl.vercel.app/submit", {
-      method: "POST",
-      body: formData,
-    });
 
-    if (!result.ok) {
-      throw new Error(`Server error: ${result.status}`);
-    }
+    console.log(formData.get("fileToUpload"));
+    const result = await fetch(
+      "https://form-backend-kohl.vercel.app/submit",
 
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
     EnglishForm.style.display = "none";
     document.getElementById("en-message").classList.add("show");
   } catch (error) {
-    console.error("Error submitting English form:", error);
-    // Optionally display error to the user here
+    console.log(error, "Error");
   }
 }
 
-async function SubmitArabicForm() {
+async function SumbitArabicForm(e) {
   try {
     const formData = new FormData(ArabForm);
-    const result = await fetch("https://form-backend-kohl.vercel.app/submit", {
-      method: "POST",
-      body: formData,
-    });
 
-    if (!result.ok) {
-      throw new Error(`Server error: ${result.status}`);
-    }
+    console.log(formData.get("fileToUpload"));
+    const result = await fetch(
+      "https://form-backend-kohl.vercel.app/submit",
 
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
     ArabForm.style.display = "none";
     document.getElementById("ar-message").classList.add("show");
   } catch (error) {
-    console.error("Error submitting Arabic form:", error);
-    // Optionally display error to the user here
+    console.log(error, "Error");
   }
 }
