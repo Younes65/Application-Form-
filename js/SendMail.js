@@ -1,13 +1,13 @@
 const ArabForm = document.getElementById("Ar-form");
 const EnglishForm = document.getElementById("En-form");
 
-document.getElementById("En-btn").addEventListener("click", (e) => {
+EnglishForm.addEventListener("submit", (e) => {
   e.preventDefault();
   e.stopPropagation();
   return SumbitEnglishForm(e);
 });
 
-document.getElementById("Arab-btn").addEventListener("click", (e) => {
+ArabForm.addEventListener("submit", (e) => {
   e.preventDefault();
   e.stopPropagation();
   return SumbitArabicForm(e);
