@@ -3,13 +3,11 @@ const EnglishForm = document.getElementById("En-form");
 
 EnglishForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  e.stopPropagation();
   return SumbitEnglishForm(e);
 });
 
 ArabForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  e.stopPropagation();
   return SumbitArabicForm(e);
 });
 
@@ -26,6 +24,7 @@ async function SumbitEnglishForm(e) {
         body: formData,
       }
     );
+    console.log(result);
     EnglishForm.style.display = "none";
     document.getElementById("en-message").classList.add("show");
   } catch (error) {
