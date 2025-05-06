@@ -3,11 +3,13 @@ const EnglishForm = document.getElementById("En-form");
 
 EnglishForm.addEventListener("submit", (e) => {
   e.preventDefault();
+  e.stopPropagation();
   return SumbitEnglishForm(e);
 });
 
 ArabForm.addEventListener("submit", (e) => {
   e.preventDefault();
+  e.stopPropagation();
   return SumbitArabicForm(e);
 });
 
