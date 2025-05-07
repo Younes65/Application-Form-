@@ -83,6 +83,10 @@
   font-family: "Arbfonts Ge Ss Two 28", Arial, sans-serif;
 }
 
+.text-field.left {
+  text-align: right;
+}
+
 .field_wrapper.row {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
